@@ -21,3 +21,12 @@ Um simples conversor de arquivos que permite a conversão de arquivos SHP (Shape
 ## Pré-requisitos
 
 Antes de executar o projeto, verifique se você tem o Node.js instalado na sua máquina. Você pode baixar o Node.js em [nodejs.org](https://nodejs.org/).
+
+## Instalação
+
+1. Clone este repositório:
+
+
+   ```bash
+   git clone https://github.com/eltonjr13/ConversorShp
+   cd ConversorShp
