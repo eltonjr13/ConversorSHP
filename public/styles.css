@@ -1,0 +1,138 @@
+/* styles.css */
+
+/* Reset de margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f1ffc9; /* Fundo claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    background-color: #46b605f6; /* Azul */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    margin: 0;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    background-color: rgb(255, 255, 255); /* Fundo branco para o conteúdo */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-5px); /* Elevação ao passar o mouse */
+}
+
+/* Estilo do input de arquivo */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #46b605f6;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #46b605f6;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #46b605f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #46b605f6;
+    transform: translateY(-2px);
+}
+
+/* Mensagem de status */
+#message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Animação para mensagens de status */
+#message.success {
+    color: #28a745;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#message.error {
+    color: #dc3545;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Keyframes da animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo do rodapé */
+footer {
+    width: 100%;
+    background-color: #46b605f6; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    main {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    button {
+        padding: 12px;
+    }
+}
